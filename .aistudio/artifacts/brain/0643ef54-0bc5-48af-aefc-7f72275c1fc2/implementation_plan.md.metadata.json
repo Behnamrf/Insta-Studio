@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan for the Instagram Creator Agent Studio web application, ported from the Jake Schincariol Instagram Agent Skill suite. Features an all-in-one studio with 13 specialized Instagram management capabilities (26 Viral Reel hook formulas, carousel slide deck planner, SEO caption & hashtag generator, AI Humanizer tone refiner, profile audit, and content strategy), bilingual Persian & English support with full RTL/LTR toggle, interactive phone mockup preview, and server-side Gemini AI generation.",
+  "updatedAt":  "2026-10-27T08:20:12.103191049Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

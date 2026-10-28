@@ -1,0 +1,6 @@
+{
+  "name": "Instagram Agent Studio",
+  "description": "All-in-one AI Instagram content studio based on Jake Schincariol's Instagram Agent Skills. Features 26 viral hook formulas, Reel script generator, carousel planner, caption & hashtag optimizer, AI humanizer, profile audit, and live phone preview with Persian & English RTL support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

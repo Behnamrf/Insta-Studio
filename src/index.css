@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/misc/Farsi-Digits/Vazirmatn-FD-font-face.css');
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-vazirmatn: 'Vazirmatn', sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-english: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-persian: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-english);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Universal Vazirmatn rule for RTL / Persian mode */
+  [dir="rtl"],
+  [dir="rtl"] body,
+  [dir="rtl"] input,
+  [dir="rtl"] textarea,
+  [dir="rtl"] select,
+  [dir="rtl"] button,
+  [dir="rtl"] p,
+  [dir="rtl"] span,
+  [dir="rtl"] div,
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6,
+  [dir="rtl"] label {
+    font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif !important;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.2);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.4);
+  }
+}

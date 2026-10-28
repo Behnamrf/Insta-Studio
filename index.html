@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Agent Studio</title>
+    <meta name="description" content="All-in-one AI Instagram content studio based on Jake Schincariol's Instagram Agent Skills. Features 26 viral hook formulas, Reel script generator, carousel planner, caption & hashtag optimizer, AI humanizer, profile audit, and live phone preview with Persian & English RTL support." />
+    <meta property="og:title" content="Instagram Agent Studio" />
+    <meta property="og:description" content="All-in-one AI Instagram content studio based on Jake Schincariol's Instagram Agent Skills. Features 26 viral hook formulas, Reel script generator, carousel planner, caption & hashtag optimizer, AI humanizer, profile audit, and live phone preview with Persian & English RTL support." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script>
+      // Gracefully suppress Vite dev client WebSocket errors per AI Studio environment constraints (HMR: Disabled)
+      (function() {
+        if (typeof window !== 'undefined') {
+          window.addEventListener('unhandledrejection', function(event) {
+            var reason = event && (event.reason || event.detail);
+            var str = String((reason && (reason.stack || reason.message)) || reason || '');
+            if (str.indexOf('WebSocket') !== -1 || str.indexOf('@vite/client') !== -1 || str.indexOf('createWebSocketModuleRunnerTransport') !== -1) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+            }
+          }, true);
+          window.addEventListener('error', function(event) {
+            var str = String((event && (event.message || event.filename)) || '') + ' ' + String((event && event.error && event.error.stack) || '');
+            if (str.indexOf('WebSocket') !== -1 || str.indexOf('@vite/client') !== -1 || str.indexOf('createWebSocketModuleRunnerTransport') !== -1) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+            }
+          }, true);
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-pink-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
